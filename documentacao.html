@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boleto Easy</title>
+        <meta charset="UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mobMenu.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+   
+
+    </head>
+    <body>
+
+
+
+      
+
+        <header class="header row">
+         <div class="container">
+           <div class="row topHead valign-wrapper">
+            <div class="col-sm-6">
+               <a class="logo" href="index.html"><img src="images/logo.png" alt="Boleto Easy" /></a>
+            </div>
+            <div class="col-sm-6">
+               <ul class="menu hidden-xs hidden-sm">
+                   <li><a href="#comoFunciona">Como funciona?</a></li>
+                   <li><a href="documentacao.html">Documentação</a></li>
+                   <li><a href="#faleConosco">Fale Conosco</a></li>
+               </ul>
+
+               <span onclick="openNav()" class="hidden-md hidden-lg mobMenu"><img src="http://www.centurydata.com.br/wp-content/uploads/2019/02/menu-icon.png" /></span>
+
+               
+            </div>
+           </div>
+          
+           
+           <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#comoFunciona">Como funciona?</a>
+                <a href="/documentacao.html">Documentação</a>
+                <a href="#faleConosco">Fale Conosco</a>
+              
+            </div>
+          
+          </div>
+        
+      
+           
+        </div>
+
+
+        
+    </header>
+
+    
+         <div class="container">
+    <div class="row boxContent">
+            
+                <h2>Integre com sua plataforma</h2>
+                <p class="">
+                    API Simples e Fácil de Usar. Para fazer integração com nossa API e até mesmo realizar testes basta utilizar os dados abaixo:
+                   </p>
+
+                <div class="urlPost">
+                URL (Request POST):<br /><br />
+                www.boletoeasy.com.br/api/v1/boletos
+                </div>
+
+                <p>Dados para envio:</p>
+                <pre>
+                        {
+                            "sequential": 2,
+                            "amount": 27.34,
+                            "dueDate": "2019-03-06",
+                            "payer": {
+                              "name": "Joao Pagador",
+                              "taxIdentificationNumber": "34804400613",
+                              "address": {
+                                "zipCode": "13181-122",
+                                "street": "Rua dos Milagres",
+                                "number": "10",
+                                "district": "Vila Prudente",
+                                "complement": "AP 25",
+                                "city": "Sao Paulo",
+                                "state": "SP",
+                                "country": "Brasil"
+                              }
+                            },
+                            "payee": {
+                              "name": "Jose Recebedor",
+                              "taxIdentificationNumber": "66535383709",
+                              "address": {
+                                "zipCode": "12245-821",
+                                "street": "Av. Agora Vai",
+                                "number": "24",
+                                "district": "Bairro Santo Deus",
+                                "complement": "Proximo a Vila Socorro",
+                                "city": "Santos",
+                                "state": "SP",
+                                "country": "Brasil"
+                              }
+                            },
+                            "payeeBankAccount": {
+                              "bankNumber": "237",
+                              "agencyNumber": "0001-9",
+                              "accountNumber": "1234567-8",
+                              "walletNumber": "13"
+                            },
+                            "instructions": [
+                              "Pagar em qualquer agencia bancaria",
+                              "Receber mesmo apos o vencimento"
+                            ]
+                          }
+                </pre>
+
+
+            
+          </div>
+        
+        </div>
+       
+
+        <footer class="row">
+            <div class="container">
+                    <div class="useIt" id="faleConosco">
+                            <h3>Utilize esse serviço</h3>
+                            <p>Deixe seu contato em breve nossa equipe comercial entrará em contato.</p>
+                             
+        
+                            <div class="row inputZone">
+                                    <form action="https://formspree.io/joel.marques@perfializa.me" method="POST">
+                                          <div class="col-sm-12 col-md-6">
+                                              <input type="text" class="customInput" name="name" placeholder="Nome ou Empresa" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Seu nome...';}" required>
+                                          </div>
+                                          <div class="col-sm-12 col-md-6">
+                                              <input type="number" class="customInput" name="telefone" placeholder="Telefone" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Seu nome...';}" required>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <input type="email" class="customInput" name="email" placeholder="Email" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Seu nome...';}" required>
+                                          </div>
+                  
+                                          <input type="submit" class="btn btnSend" value="Enviar">
+                                    </form>
+                                     </div>
+        
+                            
+                            
+        
+                        </div>
+
+
+
+
+            </div>
+
+            <div class="row credits">
+                &copy; Copyright. Todos os Direitos reservados.
+            </div>
+        </footer>
+
+
+       
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      
+    </body>
+</html>

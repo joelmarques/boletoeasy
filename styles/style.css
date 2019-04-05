@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Aileron-Bold';
+    src: url('../styles/fonts/Aileron-SemiBold.otf'); 
+  }
+
+body{
+    font-family: 'Aileron-Bold';
+  overflow-x:hidden;
+}
+
+.header{
+    background: url('../images/bg.png') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    color: #FFF;
+    height: 750px;
+    border-top: 5px solid #c52222;
+}
+
+.topHead{
+    margin-top: 10px;
+}
+
+
+.logo img{
+    margin-top: 20px;
+    max-width: 150px;
+}
+
+.menu{
+    float: right;
+    margin-top: 15px;
+}
+
+.menu li{
+    float: left;
+    margin: 30px;
+    list-style: none;
+}
+.menu li a{
+    color: rgb(65, 65, 65);
+    font-size: 16px;
+}
+
+.mobMenu{
+    float: right;
+    margin-top: 35px;
+}
+.mobMenu img{
+    max-width: 50px;
+}
+
+.banner{
+    background: #c52222;
+    margin-top: -50px;
+}
+
+.superIcon{
+    max-height: 750px;
+    margin-top: -30px;
+}
+
+
+.bigTitle{
+    color: #333;
+    font-size: 40px;
+    width: 90%;
+    margin-top: 150px;
+    text-shadow: 0px 0px 10px #FFF;
+    
+}
+
+@media(max-width: 991px){
+    .bigTitle{
+        margin-top: 100px !important;
+        text-align: center;
+        margin-left: 50px;
+    }
+}
+
+.howTitle{
+    background: #333;
+    color: rgb(230, 230, 230);
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.howIt{
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  
+}
+
+.subHow{
+    text-align: center;
+    font-size: 22px;
+    color: #a8a8a8;
+}
+.itemHow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.itemHow img{
+    max-width: 450px;
+
+}
+
+
+.ad{
+    background: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/uQNYkho/red-abstract-background_e1fa70pv__F0000.png')no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 15px solid #333;
+}
+
+.ad h2{
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.adIt{
+    padding: 20px;
+}
+
+.adItem{
+    padding: 20px;
+    background: #FFF;
+    height: 80px;
+  
+}
+
+.adItem img{
+    max-width: 40px;
+}
+
+.adItem h4{
+    margin-left: 60px;
+    margin-top: -30px;
+}
+
+
+.customInput{
+    padding: 20px;
+    width: 100%;
+    border: 1px solid rgb(48, 48, 48);
+    background: #FFF;
+    margin: 20px;
+}
+
+.inputZone{
+    padding: 50px;
+}
+
+.btnSend{
+    background: rgb(187, 30, 30);
+    color: #FFF;
+    padding: 10px 50px 10px 50px;
+    font-size: 23px;
+    outline: none;
+    border: none;
+    box-shadow: 10px 10px 95px -31px rgba(0,0,0,0.75);
+}
+
+footer{
+    background: #333;
+    color: #FFF;
+    
+    
+}
+
+.useIt{
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.credits{
+    text-align: center;
+    background: rgb(36, 36, 36);
+    color: rgb(83, 83, 83);
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.boxContent{
+    background: #FFF;
+    padding: 20px;
+    color: #333;
+    -webkit-box-shadow: 3px -1px 44px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 3px -1px 44px 0px rgba(204,204,204,1);
+    box-shadow: 3px -1px 44px 0px rgba(204,204,204,1);
+    margin-top: -600px;
+    margin-bottom: 100px;
+}
+
+.boxContent p{
+ font-size: 17px;
+ color: rgb(156, 156, 156);
+}
+
+.boxContent h2{
+    margin-bottom: 50px;
+}
+
+pre {
+	width: 100%;
+
+	font-size: 17px;
+	line-height: 20px;
+    background: #f1f1f1;
+    color: rgb(129, 129, 129);
+	border: none;
+}
+pre code {
+	padding: 10px;
+	color: rgb(150, 150, 150);
+}
+
+.urlPost{
+    line-height: 20px;
+    background: #f1f1f1;
+    color: rgb(129, 129, 129);
+    font-size: 17px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
