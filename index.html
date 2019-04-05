@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boleto Easy</title>
+        <meta charset="UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mobMenu.css" />
+
+   
+
+    </head>
+    <body>
+        <header class="header row">
+         <div class="container">
+           <div class="row topHead valign-wrapper">
+            <div class="col-sm-6">
+               <h1 class="logo"><img src="images/logo.png" alt="Boleto Easy" /></h1>
+            </div>
+            <div class="col-sm-6">
+               <ul class="menu hidden-xs hidden-sm">
+                   <li><a href="#howWork">Como funciona?</a></li>
+                   <li><a href="documentacao.html">Documentação</a></li>
+                   <li><a href="#faleConosco">Fale Conosco</a></li>
+               </ul>
+
+               <span onclick="openNav()" class="hidden-md hidden-lg mobMenu"><img src="http://www.centurydata.com.br/wp-content/uploads/2019/02/menu-icon.png" /></span>
+
+               
+            </div>
+           </div>
+          
+           
+           <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#comoFunciona">Como funciona?</a>
+                <a href="/documentacao.html">Documentação</a>
+                <a href="#faleConosco">Fale Conosco</a>
+              
+            </div>
+          
+          </div>
+        
+      
+           <div class="row">
+              
+               <div class="col-sm-12 col-md-6">
+                  <h2 class="bigTitle">Uma forma fácil de gerar seus boletos registrados direto de sua plataforma</h2>
+               </div>
+               <div class="col-sm-12 col-md-6">
+                   <img src="images/boleto.png" class="superIcon" />
+               </div>
+             
+           </div>
+
+        </div>
+    </header>
+         
+        
+        <div class="row howTitle">
+            <div class="container">
+         <div class="col-sm-12">
+         <p>Seu boleto registrado por apenas R$ 1</p>
+        </div>
+        </div>
+    </div>
+    
+    
+    <div class="container">
+            
+                        <h2 class="howIt" id="comoFunciona">Saiba que você pode economizar muito</h2>
+                        <p class="subHow">Com nossa API seu negócio será capaz de poupar muito!</p>
+                            <div class="row">
+                             <div class="col-sm-12 col-md-6 itemHow">
+                              <img src="images/block-bank1.png" class="responsive-img" />
+                             </div>
+                             <div class="col-sm-12 col-md-6 itemHow ">
+                                    <img src="images/block-bank2.png" class="responsive-img" />
+                                   </div>
+                                
+                           </div>
+                        </div>
+
+   
+   
+
+    <div id="howWork"></div>
+
+        <div class="container">
+
+            <h2 class="howIt" id="comoFunciona">Como funciona?</h2>
+                <div class="row">
+                 <div class="col-sm-12 col-md-6 itemHow">
+                  <img src="images/1block.png" class="responsive-img" />
+                 </div>
+                 <div class="col-sm-12 col-md-6 itemHow ">
+                        <img src="images/2block.png" class="responsive-img" />
+                       </div>
+                       <div class="col-sm-12 col-md-6 itemHow ">
+                            <img src="images/3block.png" class="responsive-img" />
+                           </div>
+                           <div class="col-sm-12 col-md-6 itemHow">
+                                <img src="images/4block.png" class="responsive-img" />
+                               </div>
+               </div>
+            </div>
+
+
+
+
+
+        <section class="row ad">
+        <div class="container">
+                <h2>Agilidade, Eficiência e Inteligência</h2>
+         
+                 <div class="col-sm-12 col-md-6 adIt">
+                     <div class="adItem">
+                  <img src="images/replay-icon.png" />
+                  <h4>Gere cobranças recorrentes de maneira fácil
+                    </h4>
+                </div>
+                 </div>
+
+                 <div class="col-sm-12 col-md-6 adIt">
+                        <div class="adItem">
+                        <img src="images/coin.png" />
+                        <h4>Seu dinheiro direto na sua conta</h4>
+                    </div>
+                 </div>
+
+                 <div class="col-sm-12 col-md-6 adIt">
+                        <div class="adItem">
+                        <img src="images/email.png" />
+                        <h4>Envio automático por e-mail para seus clientes </h4>
+                    </div>
+                 </div>
+                 <div class="col-sm-12 col-md-6 adIt">
+                        <div class="adItem">
+                        <img src="images/copy.png" />
+                        <h4>Emissão de 2ª via fácil e grátis
+                            </h4>
+                        </div>
+                 </div>
+                </div>
+               
+        </section>
+
+        <footer class="row">
+            <div class="container">
+                <div class="useIt" id="faleConosco">
+                    <h3>Utilize esse serviço</h3>
+                    <p>Deixe seu contato em breve nossa equipe comercial entrará em contato.</p>
+                     
+
+                    <div class="row inputZone">
+                  <form action="https://formspree.io/joel.marques@perfializa.me" method="POST">
+                        <div class="col-sm-12 col-md-6">
+                            <input type="text" class="customInput" name="name" placeholder="Nome ou Empresa" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Seu nome...';}" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <input type="number" class="customInput" name="telefone" placeholder="Telefone" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Seu nome...';}" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="email" class="customInput" name="email" placeholder="Email" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Seu nome...';}" required>
+                        </div>
+
+                        <input type="submit" class="btn btnSend" value="Enviar">
+                  </form>
+                   </div>
+
+                    
+                    
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="row credits">
+                &copy; Copyright. Todos os Direitos reservados.
+            </div>
+        </footer>
+
+
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+                  function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+window.onload = function() {
+
+
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        place = target.offset().top;
+        place -= 100;
+        $('html, body').stop().animate({
+            scrollTop: place
+        }, 2000);
+		
+		closeNav();
+    }
+
+});
+
+}
+            </script>
+    </body>
+</html>
