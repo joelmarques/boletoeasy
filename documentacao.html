@@ -66,64 +66,79 @@
          <div class="container">
     <div class="row boxContent">
             
-                <h2>Integre com sua plataforma</h2>
+                <h2>API Rest BoletoEasy - Documentação</h2>
                 <p class="">
-                    API Simples e Fácil de Usar. Para fazer integração com nossa API e até mesmo realizar testes basta utilizar os dados abaixo:
+                    Seja bem-vindo à página da documentação de referência da API Rest BoletoEasy.
                    </p>
 
+                <p class="">
+                    1 - Criando um boleto
+                </p>
+
                 <div class="urlPost">
-                URL (Request POST):<br /><br />
-                www.boletoeasy.com.br/api/v1/boletos
+                    Para criar um boleto e obter seu retorno em formato PDF, é muito simples e fácil com a API Rest BoletoEasy:<br /><br />
+                    <span style="color: #c52222;">POST</span> http://api.boletoeasy.com.br/api/v1/boletos
                 </div>
 
-                <p>Dados para envio:</p>
+                <p>Request Body application/json</p>
                 <pre>
-                        {
-                            "sequential": 2,
-                            "amount": 27.34,
-                            "dueDate": "2019-03-06",
-                            "payer": {
-                              "name": "Joao Pagador",
-                              "taxIdentificationNumber": "34804400613",
-                              "address": {
-                                "zipCode": "13181-122",
-                                "street": "Rua dos Milagres",
-                                "number": "10",
-                                "district": "Vila Prudente",
-                                "complement": "AP 25",
-                                "city": "Sao Paulo",
-                                "state": "SP",
-                                "country": "Brasil"
-                              }
-                            },
-                            "payee": {
-                              "name": "Jose Recebedor",
-                              "taxIdentificationNumber": "66535383709",
-                              "address": {
-                                "zipCode": "12245-821",
-                                "street": "Av. Agora Vai",
-                                "number": "24",
-                                "district": "Bairro Santo Deus",
-                                "complement": "Proximo a Vila Socorro",
-                                "city": "Santos",
-                                "state": "SP",
-                                "country": "Brasil"
-                              }
-                            },
-                            "payeeBankAccount": {
-                              "bankNumber": "237",
-                              "agencyNumber": "0001-9",
-                              "accountNumber": "1234567-8",
-                              "walletNumber": "13"
-                            },
-                            "instructions": [
-                              "Pagar em qualquer agencia bancaria",
-                              "Receber mesmo apos o vencimento"
-                            ]
-                          }
+                {
+                    "sequential": 1,
+                    "amount": 825.34,
+                    "dueDate": "30/04/2019",
+                    "payer": {
+                        "name": "Joao Cliente Pagador",
+                        "taxIdentificationNumber": "348.044.006-13",
+                        "address": {
+                        "zipCode": "13181-122",
+                        "street": "Rua Vinte e Seis",
+                        "number": "1000",
+                        "district": "Bairro Ipiranga",
+                        "complement": "AP 25",
+                        "city": "Sao Paulo",
+                        "state": "SP",
+                        "country": "Brasil"
+                        }
+                    },
+                    "payee": {
+                        "name": "Solution Empresa Recebedora",
+                        "taxIdentificationNumber": "38.356.778/0001-00",
+                        "address": {
+                        "zipCode": "12245-821",
+                        "street": "Av. Agora Vai",
+                        "number": "24",
+                        "district": "Bairro Santo Deus",
+                        "complement": "Proximo a Vila dos Milagres",
+                        "city": "Santos",
+                        "state": "SP",
+                        "country": "Brasil"
+                        }
+                    },
+                    "payeeBankAccount": {
+                        "bankNumber": "001",
+                        "agencyNumber": "1234",
+                        "agencyDV": "9",
+                        "accountNumber": "12345678",
+                        "accountDV": "9",
+                        "walletNumber": "17",
+                        "covenantNumber": "1234567"
+                    },
+                    "paymentLocations": [
+                        "Pagar preferencialmente no Banco do Brasil",
+                        "Pagar em qualquer agencia bancaria"
+                    ],
+                    "instructions": [
+                        "Todas as informacoes sao de responsabilidade do Beneficiario",
+                        "Instrucao 2",
+                        "Receber mesmo apos o vencimento",
+                        "Instrucao 4",
+                        "Pode-se incluir ate 5 instrucoes"
+                    ]
+                }
                 </pre>
 
-
+                <p>Response Body application/pdf</p>
+                <pre>Boleto em PDF</pre>
             
           </div>
         
