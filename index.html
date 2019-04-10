@@ -158,7 +158,7 @@
                      
 
                     <div class="row inputZone">
-                  <form action="https://formspree.io/joel.marques@perfializa.me" method="POST">
+                  <form action="https://formspree.io/bitmarques@gmail.com" method="POST">
                         <div class="col-sm-12 col-md-6">
                             <input type="text" class="customInput" name="name" placeholder="Nome ou Empresa" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Seu nome...';}" required>
                         </div>
@@ -168,7 +168,14 @@
                         <div class="col-sm-12">
                             <input type="email" class="customInput" name="email" placeholder="Email" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Seu nome...';}" required>
                         </div>
+                        <div class="col-sm-12">
+                            <textarea class="customInput" name="mensagem" placeholder="Sua mensagem..."></textarea>
+                        </div>
 
+                        <input type="hidden" name="_subject" value="Nova mensagem para o Boleto Easy!" />
+                        <input type="hidden" name="_language" value="pt" />
+                        <input type="hidden" name="_next" value="http://boletoeasy.com.br/confirmation.html" />
+                        <input type="text" name="_gotcha" style="display:none">
                         <input type="submit" class="btn btnSend" value="Enviar">
                   </form>
                    </div>
