@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Boleto Easy</title>
+        <title>API Boleto Easy</title>
         <meta charset="UTF-8" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/mobMenu.css" />
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-   
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="shortcut icon" href="images/shortcut.ico" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/mobMenu.css" />
     </head>
     <body>
-
-
-
-      
-
         <header class="header row">
          <div class="container">
            <div class="row topHead valign-wrapper">
@@ -27,8 +17,8 @@
             </div>
             <div class="col-sm-6">
                <ul class="menu hidden-xs hidden-sm">
-                   <li><a href="#comoFunciona">Como funciona?</a></li>
-                   <li><a href="documentacao.html">Documentação</a></li>
+                   <li><a href="index.html#comoFunciona">Como funciona?</a></li>
+                   <li><a href="#">Documentação</a></li>
                    <li><a href="#faleConosco">Fale Conosco</a></li>
                </ul>
 
@@ -46,8 +36,8 @@
           
             <!-- Overlay content -->
             <div class="overlay-content">
-                <a href="#comoFunciona">Como funciona?</a>
-                <a href="/documentacao.html">Documentação</a>
+                <a href="index.html#comoFunciona">Como funciona?</a>
+                <a href="#">Documentação</a>
                 <a href="#faleConosco">Fale Conosco</a>
               
             </div>
@@ -147,53 +137,67 @@
 
         <footer class="row">
             <div class="container">
-                    <div class="useIt" id="faleConosco">
-                            <h3>Utilize esse serviço</h3>
-                            <p>Deixe seu contato em breve nossa equipe comercial entrará em contato.</p>
-                             
-        
-                            <div class="row inputZone">
-                                    <form action="https://formspree.io/bitmarques@gmail.com" method="POST">
-                                          <div class="col-sm-12 col-md-6">
-                                              <input type="text" class="customInput" name="name" placeholder="Nome ou Empresa" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Seu nome...';}" required>
-                                          </div>
-                                          <div class="col-sm-12 col-md-6">
-                                              <input type="number" class="customInput" name="telefone" placeholder="Telefone" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Seu nome...';}" required>
-                                          </div>
-                                          <div class="col-sm-12">
-                                              <input type="email" class="customInput" name="email" placeholder="Email" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Seu nome...';}" required>
-                                          </div>
-                                          <div class="col-sm-12">
-                                              <textarea class="customInput" name="mensagem" placeholder="Sua mensagem..."></textarea>
-                                          </div>
-                  
-                                          <input type="hidden" name="_subject" value="Nova mensagem para o Boleto Easy!" />
-                                          <input type="hidden" name="_language" value="pt" />
-                                          <input type="hidden" name="_next" value="http://boletoeasy.com.br/confirmation.html" />
-                                          <input type="text" name="_gotcha" style="display:none">
-                                          <input type="submit" class="btn btnSend" value="Enviar">
-                                    </form>
-                                     </div> 
-                                     
-        
-                            
-                            
-        
-                        </div>
+                <div class="useIt" id="faleConosco">
+                    <h3>FALE COM O TIME</h3>
+                    <p>é <span style="color: #c52222;">#Easy</span></p>
+                    <p>Estamos preparados para te atender.</p>
+                    <div class="row inputZone">
+                        <form action="https://formspree.io/bitmarques@gmail.com" method="POST">
+                                <div class="col-sm-12 col-md-6">
+                                    <input type="text" class="customInput" name="name" placeholder="Nome ou Empresa" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Nome ou Empresa';}" required>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <input type="number" class="customInput" name="telefone" placeholder="Telefone" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'Telefone';}" required>
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="email" class="customInput" name="email" placeholder="E-mail" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = 'E-mail';}" required>
+                                </div>
+                                <div class="col-sm-12">
+                                    <textarea class="customInput" name="mensagem" placeholder="Sua mensagem"></textarea>
+                                </div>
 
-
-
-
+                                <input type="hidden" name="_subject" value="Nova mensagem para o Boleto Easy!" />
+                                <input type="hidden" name="_language" value="pt" />
+                                <input type="hidden" name="_next" value="http://boletoeasy.com.br/confirmation.html" />
+                                <input type="text" name="_gotcha" style="display:none">
+                                <input type="submit" class="btn btnSend" value="Enviar">
+                        </form>
+                    </div>
+                </div>
             </div>
-
             <div class="row credits">
-                &copy; Copyright. Todos os Direitos reservados.
+                &copy; 2019 API Boleto Easy - Expertise em Cobranças - Todos os direitos reservados.
             </div>
         </footer>
 
-
-       
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+
+            window.onload = function() {
+
+                $('a[href^="#"]').on('click', function(event) {
+                    var target = $(this.getAttribute('href'));
+                    if( target.length ) {
+                        event.preventDefault();
+                        place = target.offset().top;
+                        place -= 100;
+                        $('html, body').stop().animate({
+                            scrollTop: place
+                        }, 2000);
+                        
+                        closeNav();
+                    }
+
+                });
+            }
+        </script>
       
     </body>
 </html>
